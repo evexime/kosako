@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INFERIOR</title>
+<center><h1><font face="Bodoni MT Black" color="094c48">PARTE INFERIOR DE MI PÁGINA WEB</font></h1></center>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden; /* Evita la barra de desplazamiento horizontal */
+    }
+
+    .moving-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300%; /* Duplica el ancho para asegurar que la imagen se mueva completamente fuera de la vista */
+        height: 100%;
+        background-image: url('kosako.jpg'); /* Ruta de tu imagen */
+        background-size: auto 120%; /* Ajusta el tamaño de la imagen al alto de la ventana */
+        animation: moveRight 20s linear infinite; /* Animación de desplazamiento */
+    }
+
+    @keyframes moveRight {
+        0% {
+            transform: translateX(0); /* Inicio: la imagen comienza desde la izquierda */
+        }
+        100% {
+            transform: translateX(-50%); /* Fin: la imagen se desplaza completamente hacia la derecha */
+        }
+    }
+
+      
+</style>
+</head>
+<body>
+
+<div class="moving-background">
+	<div class="overlay-text">
+	</div>
+</div>
+
+</body>
+</html>
